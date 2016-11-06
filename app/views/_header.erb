@@ -1,10 +1,30 @@
+<div class="container">
+
+<div class="jumbotron">
+
+  <h1>Score Placements</h1>
+  <p>Send beats to the artist YOU want to work with</p>
+  <!-- If Logged in -->
 <% if current_user %>
-  <a href="/users/<%= current_user.id %> ">Profile Page</a>
-  <form action="/sessions" method="POST">
+
+  <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Log in</a> -->
+
+  <a class="btn btn-primary btn-lg" href="/users/<%= current_user.id %> " role="button">Home</a>
+
+  <form id="log-out-form" action="/sessions" method="POST">
     <input type="hidden" name="_method" value="DELETE">
-    <input type="submit" value="Logout">
+    <button class="btn btn-primary btn-lg" type="submit" form="log-out-form" value="Logout">Log Out</button>
   </form>
+
+	<!-- If Not Logged in -->
 <% else %>
-  <a href="/sessions/new">Login</a>
-  <a href="/users/new">Register</a>
+						<a class="btn btn-primary btn-lg" href="/sessions/new" role="button">Log in</a>
+					  <a class="btn btn-primary btn-lg" href="/users/new" role="button">Sign up</a>
 <% end %>
+</div>
+
+</div>
+
+ 
+
+  
