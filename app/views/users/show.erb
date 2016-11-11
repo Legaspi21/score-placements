@@ -1,7 +1,28 @@
-<h1>USERS SHOW / PROFILE PAGE</h1>
-<h2>get '/users/:id'</h2>
 
 <% if current_user %>
+<div id="tweets" class="container">
   <h2>Welcome <%= current_user.username %>!</h2>
+<!--   <ul> -->
+    <% @feed.each do |tweet| %>
+<!--     <li>  -->
+<!--      <div class="row"> -->
+      <div class="col-sm-6 col-md-4" style="height: 500px;">
+        <div class="thumbnail">
+          <img src="<%= tweet[:image] %>" alt="..." >
+          <div class="caption">
+            <h3><%= tweet[:username]%></h3>
+            <b>Followers: <%= tweet[:followers]%></b>
+            <p><%= tweet[:text] %></p>
+            <p><%= tweet[:created_at] %> </p>
+            <p><a href="<%= tweet[:url] %>" class="btn btn-primary" role="button">Visit profile</a></p>
+          </div>
+        </div>
+      </div>
+<!--     </div> -->
+    
+<!--   </li> -->
 
+  <% end %>
+</ul>
+</div>
 <% end %>

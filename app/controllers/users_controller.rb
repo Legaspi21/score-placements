@@ -1,4 +1,4 @@
-
+require_relative '../services/twitter_service'
 # USERS INDEX
 get '/users' do
   @users = User.all
@@ -35,6 +35,9 @@ end
 # USERS SHOW
 get '/users/:id' do
   @user = User.find(params[:id])
+  twitter = TwitterService.new
+  @feed = twitter.a_n_r + twitter.send_beats + twitter.music_producer 
+
   erb :'users/show'
 end
 
