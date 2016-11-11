@@ -1,1 +1,7 @@
   <a class="btn btn-primary btn-lg" href="/users/<%= current_user.id %> " role="button">Profile Page</a>
+
+
+config.consumer_key        = ENV['TWITTER_ID']
+  config.consumer_secret     = ENV['TWITTER_SECRET']
+  config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
+  config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']

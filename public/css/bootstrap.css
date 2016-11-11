@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -11,7 +12,8 @@ html {
 }
 body {
   margin: 0;
-
+  background-image: url('http://www.artflyz.com/size/1024x768/server16-cdn/2016/01/06/wood-floor-room-backgrounds-dark-wood-floor-background-0de468573cdf1ce6.jpg');
+  z-index: 3;
 }
 article,
 aside,
@@ -4960,8 +4962,8 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  /*color: inherit;
+  background-color: #eee;*/
 
 }
 .jumbotron h1,
@@ -4975,12 +4977,14 @@ a.badge:focus {
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
+
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
+
 }
 .jumbotron .container {
   max-width: 100%;
