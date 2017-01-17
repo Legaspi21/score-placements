@@ -5,8 +5,17 @@ body {
   margin: 0;
   background-image: url('http://cdn.wallpapersafari.com/0/45/lHVKEw.jpg');
   z-index: 3;
+  background-size: cover;
+
 }
 .jumbotron {
 	background-image: url('http://www.hyperprint.fr/hd/backgrounds/image3.jpg');
+}
 
+img {
+	width: 100%;
+}
+
+.center-caro {
+	margin-left: 30px !important;
 }
