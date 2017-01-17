@@ -4,16 +4,16 @@ source 'https://rubygems.org'
  gem 'pg'
 
 # Sinatra driver
-gem 'sinatra'
+gem 'sinatra', '~> 1.4', '>= 1.4.7'
 gem 'sinatra-contrib'
 
 # Use Thin for our web server
 gem 'thin'
 
-gem 'activesupport', '~>4.2.0'
-gem 'activerecord', '~>4.2.0'
+gem 'activesupport'
+gem 'activerecord'
 
-gem 'rake'
+gem 'rack', '~> 1.5'
 gem 'httparty'
 gem 'twitter'
 gem 'bcrypt'
@@ -25,7 +25,7 @@ gem 'dotenv'
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
-  gem 'rspec', '~>3.0'
+  gem 'rspec'
   gem 'capybara'
 end
 
